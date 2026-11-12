@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #081b29;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: #05131d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h2, span {
+  color: #00eeff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav a:hover {
+  color: #00eeff;
+}
+
+.menu {
+  display: none;
+  background: none;
+  color: white;
+  border: 0;
+  font-size: 25px;
+}
+
+section {
+  padding: 90px 10%;
+  text-align: center;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  min-height: 85vh;
+  text-align: left;
+}
+
+#home h1 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+#home h2 {
+  color: #00eeff;
+  margin-bottom: 20px;
+}
+
+#home p {
+  line-height: 1.7;
+}
+
+#home img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00eeff;
+}
+
+.welcome {
+  color: #00eeff;
+}
+
+.btn {
+  display: inline-block;
+  background: #00eeff;
+  color: #081b29;
+  padding: 13px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.cards div {
+  background: #102c40;
+  padding: 30px;
+  border-radius: 15px;
+  min-width: 180px;
+  flex: 1;
+}
+
+.cards h3 {
+  color: #00eeff;
+  margin-top: 15px;
+}
+
+section h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #05131d;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width: 700px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #05131d;
+    padding: 20px;
+  }
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  #home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #home h1 {
+    font-size: 32px;
+  }
+
+  #home img {
+    width: 200px;
+    height: 200px;
+  }
+}
